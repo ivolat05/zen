@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 500px;
+    padding: 40px 48px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url("../images/header.jpg") repeat center center;
+    height: 180px;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.main-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+
+    color: #000000;
+    padding-bottom: 21px;
+}
+
+.main-text:nth-child(2n + 1)::after {
+    content: url("../images/heart.svg");
+}
+
+.main-text:nth-child(2n + 1) {
+    padding-bottom: 31px;
+}
+
+.main-baner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background: linear-gradient(264.44deg, #dc211b 0%, #bf251e 100%);
+    border-radius: 20px;
+    margin-bottom: 51px;
+}
+
+.main__banner-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.main__banner-text:nth-child(2) {
+    font-weight: normal;
+}
+
+.main__banner-discount {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    padding-bottom: 6px;
+}
+
+.main__banner-price {
+    text-align: right;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    text-decoration-line: line-through;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.form-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #000000;
+    padding-bottom: 16px;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #91929a;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 21px;
+}
+.form-input::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #91929a;
+}
+.form-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 16px 58px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: -0.2px;
+    color: #ffffff;
+
+    background: #151516;
+    border-radius: 34px;
+    border: none;
+    outline: none;
+}
+
+.main__wrapp {
+    background: #f5f5fa;
+    border-radius: 4px;
+    padding: 24px 24px 10px 24px;
+}
+
+.main__wrapp-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+
+    color: #000000;
+    padding-bottom: 14px;
+}
+
+.main__wrapp-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+}
+
+@media (max-width: 340px) {
+    .main__banner-discount {
+        font-size: 26px;
+    }
+}
